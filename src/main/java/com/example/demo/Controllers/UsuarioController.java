@@ -45,5 +45,10 @@ public class UsuarioController {
         }
     }
 
+    @GetMapping("/queryNombre")
+    public ArrayList<UsuarioModel> obtenerUsuarioPorNombre(@RequestParam("nombre") String nombre){
+        return this.usuarioService.obtenerPorNombre(nombre);
+    }
+
 
 }

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public interface UsuarioRepository extends CrudRepository<UsuarioModel, Long> {
     public abstract ArrayList<UsuarioModel> findByPrioridad(Integer prioridad);
 
-    // TODO: 17/02/22 Primera mejora:
+    // TODO: 17/02/22 Primera mejora: Con este se puede buscar por nombre.
 
     public abstract ArrayList<UsuarioModel> findByNombre(String nombre);
 
